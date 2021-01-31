@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Red Mood | Wine eccellency</title>
+  </head>
+  <body>
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Red Mood.</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+            </li>
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#share" class="nav__link">Share</a>
+            </li>
+            <li class="nav__item">
+              <a href="#decoration" class="nav__link">Merchandise</a>
+            </li>
+            <li class="nav__item">
+              <a href="#accessory" class="nav__link">Wines</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+      <script
+        type="module"
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+      ></script>
+    </header>
+
+    <main class="l-main">
+      <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+          <div class="home__img">
+            <!-- <img src="assets/img/home.png" alt="" /> -->
+            <model-viewer
+              src="assets/model/wine.glb"
+              ios-src="assets/model/wine.usdz"
+              ar
+              class="model"
+              camera-controls
+              camera-orbit="1.272e-13deg 84.74deg 1.086m"
+              min-camera-orbit="auto auto auto"
+              max-camera-orbit="auto auto 1.086m"
+              poster="assets/model/poster.png"
+              auto-rotate
+              auto-rotate-delay="500"
+            >
+            </model-viewer>
+          </div>
+
+          <div class="home__data">
+            <h1 class="home__title">Wine Excellence</h1>
+            <p class="home__description">
+              "We are all mortal until the first kiss and the second glass of
+              wine."
+            </p>
+            <a href="#accessory" class="button">See Vines</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="share section bd-container" id="share">
+        <div class="share__container bd-grid">
+          <div class="share__data">
+            <h2 class="section-title-center">
+              The best Wine <br />
+              You Can Have
+            </h2>
+            <p class="share__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              pellentesque rhoncus diam, accumsan vestibulum elit fermentum
+              eget. Suspendisse potenti. Maecenas volutpat eros ac leo porta,
+              quis mollis nulla fringilla. Integer in justo elit. Proin blandit
+              lorem eget nisl euismod porta. Proin nisi risus, consectetur eget
+              faucibus vitae, semper ac orci.
+            </p>
+            <a href="#" class="button">Try Now</a>
+          </div>
+
+          <div class="share__img">
+            <img src="assets/img/grape.png" alt="An image of a grape" />
+          </div>
+        </div>
+      </section>
+
+      <section class="decoration section bd-container" id="decoration">
+        <h2 class="section-title">
+          Merchandise <br />
+          For Your Favorite Wine
+        </h2>
+        <div class="decoration__container bd-grid">
+          <div class="decoration__data">
+            <img
+              src="assets/img/kit.jpg"
+              alt="An mage of a wine kit"
+              class="decoration__img"
+            />
+            <h3 class="decoration__title">Starter Kit</h3>
+            <a href="#" class="button button-link">Buy Now</a>
+          </div>
+
+          <div class="decoration__data">
+            <img
+              src="assets/img/kit-2.jfif"
+              alt="An mage of a wine kit"
+              class="decoration__img"
+            />
+            <h3 class="decoration__title">Hobbist Kit</h3>
+            <a href="#" class="button button-link">Buy Now</a>
+          </div>
+
+          <div class="decoration__data">
+            <img
+              src="assets/img/kit-3.jpg"
+              alt="An mage of a wine kit"
+              class="decoration__img"
+            />
+            <h3 class="decoration__title">Pro Kit</h3>
+            <a href="#" class="button button-link">Buy Now</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="accessory section bd-container" id="accessory">
+        <h2 class="section-title">Wines</h2>
+
+        <div class="accessory__container bd-grid">
+          <div class="accessory__content">
+            <img
+              src="assets/img/wine.png"
+              height="10vh"
+              alt="An image of a wine bottle"
+              class="accessory__img"
+            />
+            <h3 class="accessory__title">Cabernet Sauvignon</h3>
+            <span class="accessory__category">Red Wine</span>
+            <span class="accessory__preci">€9.45</span>
+            <a href="#" class="button accessory__button"
+              ><i class="bx bx-heart"></i
+            ></a>
+          </div>
+
+          <div class="accessory__content">
+            <img
+              src="assets/img/wine-2.png"
+              height="10vh"
+              alt="An image of a wine bottle"
+              class="accessory__img"
+            />
+            <h3 class="accessory__title">Chardonnay</h3>
+            <span class="accessory__category">White Wine</span>
+            <span class="accessory__preci">€29.99</span>
+            <a href="#" class="button accessory__button"
+              ><i class="bx bx-heart"></i
+            ></a>
+          </div>
+
+          <div class="accessory__content">
+            <img
+              src="assets/img/wine-3.png"
+              alt="An image of a wine bottle"
+              class="accessory__img"
+            />
+            <h3 class="accessory__title">Garnacha</h3>
+            <span class="accessory__category">Red Wine</span>
+            <span class="accessory__preci">€349.99</span>
+            <a href="#" class="button accessory__button"
+              ><i class="bx bx-heart"></i
+            ></a>
+          </div>
+
+          <div class="accessory__content">
+            <img
+              src="assets/img/wine-4.png"
+              alt="An image of a wine bottle"
+              class="accessory__img"
+            />
+            <h3 class="accessory__title">Syrah</h3>
+            <span class="accessory__category">Red Wine</span>
+            <span class="accessory__preci">€79.99</span>
+            <a href="#" class="button accessory__button"
+              ><i class="bx bx-heart"></i
+            ></a>
+          </div>
+
+          <div class="accessory__content">
+            <img
+              src="assets/img/wine-5.png"
+              alt="An image of a wine bottle"
+              class="accessory__img"
+            />
+            <h3 class="accessory__title">Tempranillo</h3>
+            <span class="accessory__category">White Wine</span>
+            <span class="accessory__preci">€219.99</span>
+            <a href="#" class="button accessory__button"
+              ><i class="bx bx-heart"></i
+            ></a>
+          </div>
+          <div class="accessory__content">
+            <img
+              src="assets/img/wine-6.png"
+              alt="An image of a wine bottle"
+              class="accessory__img"
+            />
+            <h3 class="accessory__title">Merlot</h3>
+            <span class="accessory__category">Red Wine</span>
+            <span class="accessory__preci">€279.99</span>
+            <a href="#" class="button accessory__button"
+              ><i class="bx bx-heart"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="send section">
+        <div class="send__container bd-container bd-grid">
+          <div class="send__content">
+            <h2 class="section-title-center send__title">Our Newsletter</h2>
+            <p class="send__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              pellentesque rhoncus diam, accumsan vestibulum elit fermentum
+              eget. Suspendisse potenti.
+            </p>
+            <form action="">
+              <div class="send__direction">
+                <input
+                  type="text"
+                  placeholder="Your email"
+                  class="send__input"
+                />
+                <a href="#" class="button">Subscribe</a>
+              </div>
+            </form>
+          </div>
+
+          <div class="send__img">
+            <img src="assets/img/grape.png" class="img-wine" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section">
+      <div class="footer__container bd-container bd-grid">
+        <div class="footer__content">
+          <h3 class="footer__title">Our Services</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Pricing </a></li>
+            <li><a href="#" class="footer__link">Discounts</a></li>
+            <li><a href="#" class="footer__link">Shipping mode</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Our Company</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li><a href="#" class="footer__link">About us</a></li>
+            <li><a href="#" class="footer__link">Our mission</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Social</h3>
+          <a href="#" class="footer__social"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
+          <a href="#" class="footer__social"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="footer__social"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169; 2021 Red Mood. All right reserved</p>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
