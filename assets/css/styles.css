@@ -521,7 +521,7 @@ img {
   }
 
   .home__container {
-    padding: 5rem 0 0;
+    padding: 0rem 0;
   }
 
   .home__img {
@@ -578,7 +578,7 @@ img {
   }
 
   .home__container {
-    padding: 7rem 2rem 0;
+    padding: 2rem 2rem 0;
   }
 
   .share__container {
@@ -635,18 +635,5 @@ img {
   .share__container,
   .send__container {
     column-gap: 5rem;
-  }
-}
-
-@media screen and (max-width: 568px) {
-  .home__data {
-    margin-top: 5rem;
-    text-align: center;
-  }
-  .home__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vw;
   }
 }
